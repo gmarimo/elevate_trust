@@ -1,3 +1,34 @@
 page-createaccount {
 
+    .itemlogo{
+        text-align: center;
+        background: transparent;
+    }
+
+    .img{
+        width: 100px;
+        height: 140px;
+        margin-top: 30px;
+    }
+
+    .main-content{
+        background: linear-gradient(
+            rgba(20,20,20, .7), 
+            rgba(20,20,20, .7)),
+            url("../assets/imgs/wmn1.jpg");
+        background-size: cover;
+        height: 100%;     
+    }
+
+    .acc{
+        background: transparent;
+    }
+
+    .btn{
+    background-color: #0D73BB;
+    border-radius: 5px;
+    padding: 25px;
+    }
+
+
 }

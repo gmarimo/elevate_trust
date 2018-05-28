@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ProfilePage} from '../profile/profile';
+import { RolePage } from '../role/role';
 /**
  * Generated class for the LoginPage page.
  *
@@ -22,7 +23,7 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
   showprof(){
-    this.navCtrl.push(ProfilePage);
+    this.navCtrl.push(RolePage);
   }
 
 }

@@ -1,3 +1,25 @@
 page-profile {
 
+    .main-content{
+        background: linear-gradient(
+            rgba(20,20,20, .7), 
+            rgba(20,20,20, .7)),
+            url("../assets/imgs/wmn1.jpg");
+        background-size: cover;
+        height: 100%;
+        
+    }
+
+    .acc{
+        background: transparent;
+    }
+
+    p{
+        color: #fff;
+    }
+
+    .btn{
+        border-radius: 5px;
+    }
+
 }

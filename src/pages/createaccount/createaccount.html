@@ -7,27 +7,31 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>createaccount</ion-title>
+    <ion-title>Student Account</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="main-content" padding>
+
+    <ion-item class="itemlogo" no-lines>
+        <img class="img" src="assets/imgs/elevatelogo.png">
+     </ion-item>
 
     <ion-list>
-    <ion-item>
-      <ion-label floating color="primary"><ion-icon name="mail"></ion-icon>Email</ion-label>
+    <ion-item class="acc">
+      <ion-label floating color="primary"><ion-icon name="mail"></ion-icon> Email</ion-label>
       <ion-input type="text" required="true"></ion-input>
     </ion-item>
 
-    <ion-item>
-      <ion-label floating color="primary"><ion-icon name="lock"></ion-icon>Password</ion-label>
+    <ion-item class="acc">
+      <ion-label floating color="primary"><ion-icon name="lock"></ion-icon> Password</ion-label>
       <ion-input type="password" required="true"></ion-input>
     </ion-item>
     </ion-list>
 
-        <button ion-button full color="primary" class="btn"> Sign up</button>
+        <button ion-button full color="primary" (click) = "profile()" class="btn"> Sign up</button>
     
 
 </ion-content>

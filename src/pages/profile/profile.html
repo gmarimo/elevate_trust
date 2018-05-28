@@ -7,34 +7,34 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>profile</ion-title>
+    <ion-title>Student Profile</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="main-content" padding>
 
-    <ion-list>
+    <ion-list class="acc">
         <div align="center">
-          Your Personal Information
+          <p>Your Personal Information</p>
           </div>
-          <ion-item>
+          <ion-item class="acc">
             <ion-label floating color="primary"><ion-icon name="name"></ion-icon> First Name</ion-label>
             <ion-input type="text" required="true"></ion-input>
           </ion-item>
       
-          <ion-item>
+          <ion-item class="acc">
             <ion-label floating color="primary"><ion-icon name="name"></ion-icon> Last Name</ion-label>
             <ion-input type="text" required="true"></ion-input>
           </ion-item>
       
-          <ion-item>
+          <ion-item class="acc">
               <ion-label floating color="primary"><ion-icon name="gender"></ion-icon>Gender</ion-label>
               <ion-input type="text" required="true"></ion-input>
           </ion-item>
       
-          <ion-item>
+          <ion-item class="acc">
               <ion-label floating color="primary"><ion-icon name="calendar"></ion-icon> Date of Birth</ion-label>
               <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
           </ion-item>
@@ -42,26 +42,26 @@
         </ion-list>
       
       
-      <ion-list>
+      <ion-list class="acc">
         <div align="center">
-          Your Professional Information
+          <p>Your Professional Information</p>
           </div>
-          <ion-item>
+          <ion-item class="acc">
             <ion-label floating color="primary"><ion-icon name="name"></ion-icon>Job Title</ion-label>
             <ion-input type="text" required="true"></ion-input>
           </ion-item>
       
-          <ion-item>
+          <ion-item class="acc">
             <ion-label floating color="primary"><ion-icon name="name"></ion-icon>Company</ion-label>
             <ion-input type="text" required="true"></ion-input>
           </ion-item>
       
-          <ion-item>
+          <ion-item class="acc">
               <ion-label floating color="primary"><ion-icon name="gender"></ion-icon>Industry</ion-label>
               <ion-input type="text" required="true"></ion-input>
           </ion-item>
       
-          <ion-item>
+          <ion-item class="acc">
               <ion-label floating color="primary"> Work Experience(Years)</ion-label>
               <ion-select [(ngModel)]="workexp">
                   <ion-option>0-4</ion-option>
@@ -72,7 +72,7 @@
                 </ion-select>
           </ion-item>
       
-          <ion-item>
+          <ion-item class="acc">
               <ion-label floating color="primary">Overseas Experience(Years)</ion-label>
               <ion-select  [(ngModel)]="overexp">
                   <ion-option>0-4</ion-option>

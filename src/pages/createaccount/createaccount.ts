@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ProfilePage } from '../profile/profile';
 
 /**
  * Generated class for the CreateaccountPage page.
@@ -20,6 +21,10 @@ export class CreateaccountPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CreateaccountPage');
+  }
+
+  profile() {
+    this.navCtrl.push(ProfilePage);
   }
 
 }
