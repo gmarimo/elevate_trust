@@ -22,6 +22,9 @@ export class CreateaccountPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad CreateaccountPage');
   }
+  showprof(){
+    this.navCtrl.push(ProfilePage);
+  }
 
   profile() {
     this.navCtrl.push(ProfilePage);

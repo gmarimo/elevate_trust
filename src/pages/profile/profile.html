@@ -17,7 +17,11 @@
 
     <ion-list class="acc">
         <div align="center">
+<<<<<<< HEAD
           <p>Your Personal Information</p>
+=======
+          <strong>Personal Information</strong> 
+>>>>>>> 32e5e0ff44a7266f7ae78c012a88520c06fc00f0
           </div>
           <ion-item class="acc">
             <ion-label floating color="primary"><ion-icon name="name"></ion-icon> First Name</ion-label>
@@ -29,14 +33,23 @@
             <ion-input type="text" required="true"></ion-input>
           </ion-item>
       
+<<<<<<< HEAD
           <ion-item class="acc">
               <ion-label floating color="primary"><ion-icon name="gender"></ion-icon>Gender</ion-label>
               <ion-input type="text" required="true"></ion-input>
+=======
+          <ion-item>
+              <ion-label floating color="primary">Gender</ion-label>
+              <ion-select [(ngModel)]="gender">
+                  <ion-option>Female</ion-option>
+                  <ion-option>Male</ion-option>
+                </ion-select>
+>>>>>>> 32e5e0ff44a7266f7ae78c012a88520c06fc00f0
           </ion-item>
       
           <ion-item class="acc">
               <ion-label floating color="primary"><ion-icon name="calendar"></ion-icon> Date of Birth</ion-label>
-              <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+              <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="myDate"></ion-datetime>
           </ion-item>
       
         </ion-list>
@@ -85,6 +98,6 @@
       
         </ion-list>
       
-              <button ion-button full color="primary" class="btn"> Create Profile</button>
+              <button ion-button full color="primary" (click)="createprofile()" class="btn"> Create Profile</button>
           
 </ion-content>
