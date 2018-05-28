@@ -9,6 +9,8 @@ import { LoginPage } from '../login/login';
 })
 export class HomePage {
 
+  splash = true;
+
   constructor(public navCtrl: NavController) {
 
   }
@@ -18,4 +20,11 @@ export class HomePage {
   login(){
     this.navCtrl.push(LoginPage, {});
   }
+
+
+  ionViewDidLoad() {
+    setTimeout(() => this.splash = false, 4000);
+  }
+
+
 }
