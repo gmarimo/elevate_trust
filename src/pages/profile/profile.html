@@ -17,7 +17,7 @@
 
     <ion-list>
         <div align="center">
-          Your Personal Information
+          <strong>Personal Information</strong> 
           </div>
           <ion-item>
             <ion-label floating color="primary"><ion-icon name="name"></ion-icon> First Name</ion-label>
@@ -30,13 +30,16 @@
           </ion-item>
       
           <ion-item>
-              <ion-label floating color="primary"><ion-icon name="gender"></ion-icon>Gender</ion-label>
-              <ion-input type="text" required="true"></ion-input>
+              <ion-label floating color="primary">Gender</ion-label>
+              <ion-select [(ngModel)]="gender">
+                  <ion-option>Female</ion-option>
+                  <ion-option>Male</ion-option>
+                </ion-select>
           </ion-item>
       
           <ion-item>
               <ion-label floating color="primary"><ion-icon name="calendar"></ion-icon> Date of Birth</ion-label>
-              <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+              <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="myDate"></ion-datetime>
           </ion-item>
       
         </ion-list>
@@ -44,7 +47,7 @@
       
       <ion-list>
         <div align="center">
-          Your Professional Information
+          <strong>Your Professional Information</strong>
           </div>
           <ion-item>
             <ion-label floating color="primary"><ion-icon name="name"></ion-icon>Job Title</ion-label>
@@ -85,6 +88,6 @@
       
         </ion-list>
       
-              <button ion-button full color="primary" class="btn"> Create Profile</button>
+              <button ion-button full color="primary" (click)="createprofile()" class="btn"> Create Profile</button>
           
 </ion-content>

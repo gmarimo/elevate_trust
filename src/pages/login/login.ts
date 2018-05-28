@@ -21,8 +21,6 @@ export class LoginPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
-  showprof(){
-    this.navCtrl.push(ProfilePage);
-  }
+
 
 }
