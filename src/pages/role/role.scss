@@ -1,0 +1,58 @@
+page-role {
+
+    .main-content{
+        background: linear-gradient(
+            rgba(20,20,20, .7), 
+            rgba(20,20,20, .7)),
+            url("../assets/imgs/wmn1.jpg");
+        background-size: cover;
+        height: 100%;
+        
+    }
+
+    .img{
+        width: 100px;
+        height: 140px;
+        margin-top: 35px;
+    }
+
+    .itemlogo{
+        text-align: center;
+        background: transparent;
+    }
+
+    .lbl{
+        text-align: center;
+        font-size: 30px;
+        font-weight: bolder;
+        margin-bottom: 20px;
+        background: transparent;
+        color: #fff;
+    }
+
+    .itemlbl{
+        background:transparent;
+    }
+
+.btn{
+    background-color: #0D73BB;
+    border-radius: 5px;
+    margin-top: 18%;
+    padding: 25px;
+}
+
+.btn1{
+    background-color: #0D73BB;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 25px;
+}
+
+.fem{
+    font-style: italic;
+    color: #F1EF12;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+}
